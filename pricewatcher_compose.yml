@@ -1,8 +1,8 @@
 services:
   price_watcher:
-    image: price-watcher:v1.2
+    image: price-watcher:v1.3
     build: ../PriceWatcher
-    container_name: pricewatcher_v1.2
+    container_name: pricewatcher_v1.3
     volumes:
       - /etc/price-watcher/pricewatcher-config.yml:/config.yml
     restart: unless-stopped
