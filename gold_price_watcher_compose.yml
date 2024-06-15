@@ -1,5 +1,5 @@
 services:
-  price_watcher:
+  gold_price_watcher:
     environment:
     - data_path=~/gold-price-watcher-data
     image: gold-price-watcher:v0.1
