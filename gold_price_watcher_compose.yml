@@ -2,7 +2,7 @@ services:
   gold_price_watcher:
     environment:
     - data_path=~/gold-price-watcher-data
-    image: gold-price-watcher:v0.1
+    image: gold-price-watcher:v0.2
     build: ../GoldPriceWatcher
     container_name: gold-price-watcher
     volumes:
