@@ -1,0 +1,10 @@
+services:
+  price_watcher:
+    environment:
+    - data_path=~/price-watcher-data
+    image: gold-price-watcher:v0.2
+    build: ../PriceWatcher
+    container_name: gold-price-watcher
+    volumes:
+      - ~/price-watcher-data:/price-watcher-data
+    restart: unless-stopped
